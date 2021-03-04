@@ -87,10 +87,7 @@ apskdnsalkdnalksdnljn
 <!-- USAGE EXAMPLES -->
 ## User Manual
 
-
-blblabla
-
-
+<a href="md/usermanual/usermanual.md">User Manual</a>
 
 <!-- ROADMAP -->
 ## Roadmap
