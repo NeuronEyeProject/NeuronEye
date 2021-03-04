@@ -57,8 +57,8 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#User Manual">User Manual</a></li>
-    <li><a href="Release Checklist">Release Checklist</a></li>
+    <li><a href="#user-manual">User Manual</a></li>
+    <li><a href="release-checklist">Release Checklist</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
