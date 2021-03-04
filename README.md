@@ -30,14 +30,14 @@
   <h3 align="center">Cyberthreatsafety</h3>
 
   <p align="center">
-    Test
+    The Cybersafety Web Application
     <br />
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/blob/main/md/usermanual/usermanual.md"><strong>Explore the User Manual »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">Website</a>
+    <a href="https://cyberthreatsafety.com/">Website</a>
     ·
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">Webapp</a>
+    <a href="https://app.cyberthreatsafety.com/">Webapp</a>
     ·
     <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Report Bug</a>
     ·
@@ -74,7 +74,7 @@
 
 ### Information
 
-apskdnsalkdnalksdnljn
+Cyberthreatsafety (short: CTS) is a project started in spring 2021. Cyberthreatsafety is a Web Application with Cybersafety features. With the help of machine learning, your files and links can be checked for harmfulness as precisely as possible. The web application also offers a user-friendly interface for each user.
 
 ### Built With
 
