@@ -72,7 +72,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-## Information
+### Information
+
 apskdnsalkdnalksdnljn
 
 ### Built With
