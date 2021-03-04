@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">
     <img src="md/images/cts-logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,14 +19,14 @@
   <p align="center">
     Test
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Request Feature</a>
   </p>
 </p>
 
@@ -63,11 +63,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`cyberthreatsafety`, `cyberthreatsafety`, `notNow`, `notNow`, `Cyberthreatsafety`, `Yes`
 
 
 ### Built With
@@ -89,14 +84,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/cyberthreatsafety/cyberthreatsafety/issues) for a list of proposed features (and known issues).
 
 
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/cyberthreatsafety`)
@@ -109,7 +102,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the Apache License 2.0 License. See `LICENSE` for more information.
+Distributed under the Apache License 2.0 License. See [License](https://github.com/cyberthreatsafety/cyberthreatsafety/blob/main/LICENSE) for more information.
 
 
 
