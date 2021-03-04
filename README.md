@@ -35,7 +35,9 @@
     <a href="https://github.com/cyberthreatsafety/cyberthreatsafety"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">View Demo</a>
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">Website</a>
+    ·
+    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">Webapp</a>
     ·
     <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Report Bug</a>
     ·
