@@ -1,11 +1,22 @@
-[![Contributors][https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square]
-[![Last-Commit][https://img.shields.io/github/last-commit/cyberthreatsafety/cyberthreatsafety?style=flat-square]
-[![Release-date][https://img.shields.io/github/release-date/cyberthreatsafety/cyberthreatsafety?style=flat-square]
-[![issues][https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square]
-[![issues][https://img.shields.io/github/issues-closed-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square]
+<p align="center">
 
-
-
+<a href="https://img.shields.io/github/license/cyberthreatsafety/cyberthreatsafety?style=flat-square">
+        <img src="https://img.shields.io/github/license/cyberthreatsafety/cyberthreatsafety?style=flat-square"
+            alt="License"></a>
+            <a href="https://img.shields.io/snyk/vulnerabilities/github/cyberthreatsafety/cyberthreatsafety?style=flat-square">
+        <img src="https://img.shields.io/snyk/vulnerabilities/github/cyberthreatsafety/cyberthreatsafety?style=flat-square"
+            alt="Vulnerabilities"></a>
+    <a href="https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square" alt="Contributors">
+        <img src="https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square" /></a>
+    <a href="https://img.shields.io/github/commit-activity/m/cyberthreatsafety/cyberthreatsafety" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/cyberthreatsafety/cyberthreatsafety" /></a>
+    <a href="https://img.shields.io/github/issues/cyberthreatsafety/cyberthreatsafety2">
+        <img src="https://img.shields.io/github/issues/cyberthreatsafety/cyberthreatsafety"
+            alt="Issues"></a>
+    <a href="https://discord.gg/vYVu84g74e">
+        <img src="https://img.shields.io/discord/748588988738306219?style=flat-square"
+            alt="chat on Discord"></a>
+</p>
 
 
 
