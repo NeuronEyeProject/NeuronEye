@@ -54,10 +54,9 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+      <li><a href="#Information">Information</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>
-    <li>
     </li>
     <li><a href="#User Manual">User Manual</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -73,7 +72,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+## Information
+apskdnsalkdnalksdnljn
 
 ### Built With
 
