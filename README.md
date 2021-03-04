@@ -14,7 +14,7 @@
         <img src="https://img.shields.io/github/issues/cyberthreatsafety/cyberthreatsafety"
             alt="Issues"></a>
     <a href="https://discord.gg/vYVu84g74e">
-        <img src="https://img.shields.io/discord/748588988738306219?style=flat-square"
+        <img src="https://img.shields.io/discord/748588988738306219?style=flat-square?logo=discord"
             alt="chat on Discord"></a>
 </p>
 
