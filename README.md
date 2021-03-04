@@ -1,16 +1,8 @@
-<!-- MD Shields -->
-[contributors-shield]: https://img.shields.io/github/contributors/cyberthreatsafety/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/cyberthreatsafety/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/cyberthreatsafety/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/cyberthreatsafety/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/cyberthreatsafety/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/cyberthreatsafety/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cyberthreatsafety/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/cyberthreatsafety/repo/issues
-[license-shield]: https://img.shields.io/github/license/cyberthreatsafety/repo.svg?style=for-the-badge
-[license-url]: https://github.com/cyberthreatsafety/repo/blob/master/LICENSE.txt
-
-
+https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square
+https://img.shields.io/github/last-commit/cyberthreatsafety/cyberthreatsafety?style=flat-square
+https://img.shields.io/github/release-date/cyberthreatsafety/cyberthreatsafety?style=flat-square
+https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square
+https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square https://img.shields.io/github/issues-closed-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square
 
 
 
