@@ -1,8 +1,11 @@
-https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square
-https://img.shields.io/github/last-commit/cyberthreatsafety/cyberthreatsafety?style=flat-square
-https://img.shields.io/github/release-date/cyberthreatsafety/cyberthreatsafety?style=flat-square
-https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square
-https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square https://img.shields.io/github/issues-closed-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square
+[![Contributors][https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square]]
+[![Last-Commit][https://img.shields.io/github/last-commit/cyberthreatsafety/cyberthreatsafety?style=flat-square]
+[![Release-date][https://img.shields.io/github/release-date/cyberthreatsafety/cyberthreatsafety?style=flat-square]]
+[![issues][https://img.shields.io/github/issues-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square]]
+[![issues][https://img.shields.io/github/issues-closed-raw/cyberthreatsafety/cyberthreatsafety?style=flat-square]]
+
+
+
 
 
 
