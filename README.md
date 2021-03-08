@@ -1,17 +1,17 @@
 <p align="center">
 
-<a href="https://img.shields.io/github/license/cyberthreatsafety/cyberthreatsafety?style=flat-square">
-        <img src="https://img.shields.io/github/license/cyberthreatsafety/cyberthreatsafety?style=flat-square"
+<a href="https://img.shields.io/github/license/NeuronEyeProject/NeuronEye?style=flat-square">
+        <img src="https://img.shields.io/github/license/NeuronEyeProject/NeuronEye?style=flat-square"
             alt="License"></a>
-            <a href="https://img.shields.io/snyk/vulnerabilities/github/cyberthreatsafety/cyberthreatsafety?style=flat-square">
-        <img src="https://img.shields.io/snyk/vulnerabilities/github/cyberthreatsafety/cyberthreatsafety?style=flat-square"
+            <a href="https://img.shields.io/snyk/vulnerabilities/github/NeuronEyeProject/NeuronEye?style=flat-square">
+        <img src="https://img.shields.io/snyk/vulnerabilities/github/NeuronEyeProject/NeuronEye?style=flat-square"
             alt="Vulnerabilities"></a>
-    <a href="https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/cyberthreatsafety/cyberthreatsafety?style=flat-square" /></a>
-    <a href="https://img.shields.io/github/commit-activity/m/cyberthreatsafety/cyberthreatsafety" alt="Activity">
-        <img src="https://img.shields.io/github/commit-activity/m/cyberthreatsafety/cyberthreatsafety" /></a>
-    <a href="https://img.shields.io/github/issues/cyberthreatsafety/cyberthreatsafety2">
-        <img src="https://img.shields.io/github/issues/cyberthreatsafety/cyberthreatsafety"
+    <a href="https://img.shields.io/github/contributors/NeuronEyeProject/NeuronEye?style=flat-square" alt="Contributors">
+        <img src="https://img.shields.io/github/contributors/NeuronEyeProject/NeuronEye?style=flat-square" /></a>
+    <a href="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye" /></a>
+    <a href="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye">
+        <img src="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye"
             alt="Issues"></a>
     <a href="https://discord.gg/vYVu84g74e">
         <img src="https://img.shields.io/discord/748588988738306219?logo=discord"
@@ -22,25 +22,25 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/cyberthreatsafety/cyberthreatsafety">
+  <a href="https://github.com/NeuronEyeProject/NeuronEye">
     <img src="md/images/cts-logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Cyberthreatsafety</h3>
 
   <p align="center">
-    !! In development !!  The Cybersafety Web Application
+    !! In development !!  The NeuronEye Web Application
     <br />
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/blob/main/md/usermanual/usermanual.md"><strong>Explore the User Manual »</strong></a>
+    <a href="https://github.com/NeuronEyeProject/NeuronEye/blob/main/md/usermanual/usermanual.md"><strong>Explore the User Manual »</strong></a>
     <br />
     <br />
-    <a href="https://cyberthreatsafety.com/">Website</a>
+    <a href="https://neuroneye.com/">Website</a>
     ·
-    <a href="https://app.cyberthreatsafety.com/">Webapp</a>
+    <a href="https://app.neuroneye.com/">Webapp</a>
     ·
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Report Bug</a>
+    <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Report Bug</a>
     ·
-    <a href="https://github.com/cyberthreatsafety/cyberthreatsafety/issues">Request Feature</a>
+    <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Request Feature</a>
   </p>
 </p>
 
@@ -74,7 +74,7 @@
 
 ### Information
 
-Cyberthreatsafety (short: CTS) is a project started in spring 2021. Cyberthreatsafety is a Web Application with Cybersafety features. With the help of machine learning, your files and links can be checked for harmfulness as precisely as possible. The web application also offers a user-friendly interface for each user.
+NeuronEye is a project started in spring 2021. NeuronEye is a Web Application with Cybersafety features. With the help of machine learning, your files and links can be checked for harmfulness as precisely as possible. The web application also offers a user-friendly interface for each user.
 
 ### Built With
 
@@ -105,17 +105,17 @@ Cyberthreatsafety (short: CTS) is a project started in spring 2021. Cyberthreats
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/cyberthreatsafety/cyberthreatsafety/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/NeuronEyeProject/NeuronEye/issues) for a list of proposed features (and known issues).
 
 
 
-<!-- CONTRIBUTING -->
+<!-- CONTRIBUTING --> //
 ## Contributing
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/cyberthreatsafety`)
-3. Commit your Changes (`git commit -m 'Add some cyberthreatsafety'`)
-4. Push to the Branch (`git push origin feature/cyberthreatsafety`)
+2. Create your Feature Branch (`git checkout -b feature/neuroneye`)
+3. Commit your Changes (`git commit -m 'Add some neuroneye'`)
+4. Push to the Branch (`git push origin feature/neuroneye`)
 5. Open a Pull Request
 
 
@@ -123,7 +123,7 @@ See the [open issues](https://github.com/cyberthreatsafety/cyberthreatsafety/iss
 <!-- LICENSE -->
 ## License
 
-Distributed under the Apache License 2.0 License. See [License](https://github.com/cyberthreatsafety/cyberthreatsafety/blob/main/LICENSE) for more information.
+Distributed under the Apache License 2.0 License. See [License](https://github.com/cyberthreatsafety/neuroneye/blob/main/LICENSE) for more information.
 
 
 
