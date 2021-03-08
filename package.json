@@ -1,5 +1,5 @@
 {
-  "name": "cyberthreatsafety",
+  "name": "neuroneye",
   "version": "1.0.0",
   "description": "<p align=\"center\">",
   "main": "app/app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cyberthreatsafety/cyberthreatsafety.git"
+    "url": "git+https://github.com/neuroneyeproject/neuroneye.git"
   },
   "author": "ruben iannelli",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/cyberthreatsafety/cyberthreatsafety/issues"
+    "url": "https://github.com/neuroneyeproject/neuroneye/issues"
   },
-  "homepage": "https://github.com/cyberthreatsafety/cyberthreatsafety#readme",
+  "homepage": "https://github.com/neuroneyeproject/neuroneye#readme",
   "dependencies": {
     "brain.js": "^2.0.0-beta.2",
     "chalk": "^4.1.0",
