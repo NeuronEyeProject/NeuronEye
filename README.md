@@ -26,7 +26,7 @@
     <img src="md/images/cts-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Cyberthreatsafety</h3>
+  <h3 align="center">NeuronEye</h3>
 
   <p align="center">
     !! In development !!  The NeuronEye Web Application
