@@ -8,10 +8,10 @@
             alt="Vulnerabilities"></a>
     <a href="https://img.shields.io/github/contributors/NeuronEyeProject/NeuronEye?style=flat-square" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/NeuronEyeProject/NeuronEye?style=flat-square" /></a>
-    <a href="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye" alt="Activity">
-        <img src="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye" /></a>
-    <a href="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye">
-        <img src="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye"
+    <a href="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye?style=flat-square" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/NeuronEyeProject/NeuronEye?style=flat-square" /></a>
+    <a href="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye?style=flat-square">
+        <img src="https://img.shields.io/github/issues/NeuronEyeProject/NeuronEye?style=flat-square"
             alt="Issues"></a>
     <a href="https://discord.gg/vYVu84g74e">
         <img src="https://img.shields.io/discord/748588988738306219?logo=discord"
