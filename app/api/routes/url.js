@@ -38,7 +38,7 @@ router.get('/domain/:domain', checkAuth,  (req, res, next) => {
 ////////////////////////////
 
 /* <-- Url Expander --> */
-router.get('/url/short/expander', checkAuth,  (req, res, next) => {
+router.get('/expander', checkAuth,  (req, res, next) => {
 
   const reqUrl = req.query.url
 
