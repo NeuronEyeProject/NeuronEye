@@ -123,16 +123,17 @@ See the [open issues](https://github.com/NeuronEyeProject/NeuronEye/issues) for 
 <!-- LICENSE -->
 ## License
 
-Distributed under the Apache License 2.0 License. See [License](https://github.com/cyberthreatsafety/neuroneye/blob/main/LICENSE) for more information.
+Distributed under the Apache License 2.0 License. See [License](https://github.com/NeuronEyeProject/neuroneye/blob/main/LICENSE) for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
--
--
--
+- Email: --
+
+- Discord: [Click to Join](https://discord.gg/vYVu84g74e)
+
 
 
 
