@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const chalk = require('chalk');
+const cors = require("cors");
 
 
 /* <-- env settings --> */
@@ -10,6 +11,7 @@ dotenv.config();
 
 const PORT = process.env.PORT
 const DB = process.env.DB_CONNECT
+const localhost = process.env.localhost
 
 /* <-- DB Connection --> */
 mongoose.connect(DB,
@@ -17,7 +19,9 @@ mongoose.connect(DB,
 () => console.log('Connected to DB!'),
 );
   
-
+var corsOpt = {
+  origin: localhost
+};
 
 /* <-- Import Routes --> */
 const urlRoute = require('./routes/url');
@@ -25,6 +29,7 @@ const fileRoute = require('./routes/file');
 
 
 /* <-- Middleware --> */
+app.use(cors(corsOpt));
 app.use(express.json());
 
 /* <-- Routes Middleware --> */

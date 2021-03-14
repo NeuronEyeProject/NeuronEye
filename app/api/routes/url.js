@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const links = require("../models/urlSchema");
+const URLList = require("../models/urlSchema");
 const request = require('request');
 const chalk = require('chalk');
-
+const url = require('url');
 
 
 ////////////////////////////
@@ -11,10 +11,16 @@ const chalk = require('chalk');
 //                        //
 ////////////////////////////
 
-/* <-- Links by domain --> */
-router.get('/domain/:domain', checkAuth,  (req, res, next) => {
-    const name = String(req.params.domain);
-    links.find({ domain: `${name}`})
+/* <-- URL by domain --> */
+router.get('/scan', (req, res, next) => {
+
+  const reqUrl = req.query.url
+
+  let urlObject = reqUrl.parse(address, true);
+
+  const domainObject = urlObject.hostname
+
+    URLList.find({ domain: `${domainObject}`})
       .exec()
       .then(ifFoundID => {
         if (ifFoundID) {
@@ -38,7 +44,7 @@ router.get('/domain/:domain', checkAuth,  (req, res, next) => {
 ////////////////////////////
 
 /* <-- Url Expander --> */
-router.get('/expander', checkAuth,  (req, res, next) => {
+router.get('/expander', (req, res, next) => {
 
   const reqUrl = req.query.url
 
