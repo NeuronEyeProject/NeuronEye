@@ -24,15 +24,14 @@ router.get('/scan', (req, res, next) => {
       .exec()
       .then(ifFoundID => {
         if (ifFoundID) {
-          res.status(200).json(ifFoundID);
+          res.status(200).json(ifFoundID, { found: true } );
         } else {
-            res.status(404).json({ message: "No Link found from the provided Domain" });
+            res.status(404).json({ message: "No Link found from the provided Domain", found: false });
         }
       })
       .catch(err => {
         res.status(500).json({ error: err });
   });
- 
 });
 
 
