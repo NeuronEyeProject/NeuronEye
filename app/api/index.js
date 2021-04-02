@@ -7,6 +7,7 @@ const cors = require("cors");
 const morgan = require('morgan');
 const fs = require('fs');
 
+
 /* <-- env settings --> */
 dotenv.config();
 
@@ -15,38 +16,32 @@ const DB = process.env.DB_CONNECT
 const localhost = process.env.localhost
 const origin = process.env.origin
 
+/* <-- config settings --> */
+import { corsOpt } from './config/config'
+import { morganOpt } from './config/config'
+
 /* <-- DB Connection --> */
 mongoose.connect(DB,
    { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to DB!'),
 );
 
-/* <-- Settings --> */
-var corsOpt = {
-   origin: localhost
-}
-
-var morganOpt = {
-  setting: combined
-}
-
   
 
 
 
 /* <-- Import Routes --> */
-const urlRoute = require('./routes/url');
-const fileRoute = require('./routes/file');
-
+const searchRoute = require('./routes/search');
+const expanderRoute = require('./routes/expander')
 
 /* <-- Middleware --> */
-app.use(cors(corsOpt)).then(chalk.blue('CORS Option Active'))
-app.use(express.json());
+app.use(express.json()).then(chalk.blue(console.log('JSON Active')));
+app.use(cors(corsOpt)).then(chalk.blue(console.log('CORS Option Active')));
 app.use(morgan(morganOpt.setting, () => console.log('Morgan Active')));
 
-/* <-- Routes Middleware --> */
-app.use('/api/v1/url', urlRoute);
-app.use('/api/v1/file', fileRoute);
+/* <-- Routes --> */
+app.use('/api/v1/url', searchRoute);
+app.use('/api/v1/url', expanderRoute);
 
 /* <-- Err Routes Handler --> */
 app.get('*', (req, res) => {
