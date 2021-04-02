@@ -57,7 +57,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#user-manual">User Manual</a></li>
     <li><a href="release-checklist">Release Checklist</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -74,28 +73,23 @@
 
 ### Information
 
-NeuronEye is a project started in spring 2021. NeuronEye is a Web Application with Cybersafety features. With the help of machine learning, your files and links can be checked for harmfulness as precisely as possible. The web application also offers a user-friendly interface for each user.
+NeuronEye is a project started in spring 2021. NeuronEye is a Web Application with Cybersafety features in the area of URL's. NeuronEye have a large updated Database with potiential threat URL's. Expand short URL's and see what's masked behind them. The web application also offers a user-friendly interface for each user.
 
 ### Built With
 
 * [Nodejs](https://nodejs.org/)
 * [Expressjs](https://expressjs.com)
 * [Angular](https://angular.io)
-* [Brainjs](https://brain.js.org/#/)
+* [MongoDB](https://mongodb.com/)
 
-
-<!-- USAGE EXAMPLES -->
-## User Manual
-
-<a href="md/usermanual/usermanual.md">User Manual</a>
 
 <!-- Checklist -->
 ### Release Checklist
 
-- [ ] UI/UX Design
-- [ ] API + ML
-- [ ] Webapp Frontend
-- [ ] Webapp Backend
+- [ X ] UI/UX Design
+- [ X ] API 
+- [ ]  Frontend
+- [ ]  Backend
 - [ ] Tests
 - [ ] Deployment
 
