@@ -23,20 +23,20 @@
 <br />
 <p align="center">
   <a href="https://github.com/NeuronEyeProject/NeuronEye">
-    <img src="md/images/cts-logo.png" alt="Logo" width="80" height="80">
+    <img src="md/images/neuroneye-logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">NeuronEye</h3>
 
   <p align="center">
-    !! In development !!  The NeuronEye Web Application
+    The NeuronEye Web Application
     <br />
-    <a href="https://github.com/NeuronEyeProject/NeuronEye/blob/main/md/usermanual/usermanual.md"><strong>Explore the User Manual »</strong></a>
+    <a href="https://neuroneye.net/"><strong>Explore our Website »</strong></a>
     <br />
     <br />
-    <a href="https://neuroneye.com/">Website</a>
+    <a href="https://neuroneye.net/">Website</a>
     ·
-    <a href="https://app.neuroneye.com/">Webapp</a>
+    <a href="https://app.neuroneye.net/">Webapp</a>
     ·
     <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Report Bug</a>
     ·
