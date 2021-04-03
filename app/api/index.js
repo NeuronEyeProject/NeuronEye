@@ -1,5 +1,5 @@
+/* <-- Modules --> */
 const express = require('express');
-const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const chalk = require('chalk');
@@ -7,6 +7,8 @@ const cors = require("cors");
 const morgan = require('morgan');
 const fs = require('fs');
 
+/* <-- App --> */
+const app = express();
 
 /* <-- env settings --> */
 dotenv.config();
@@ -20,15 +22,12 @@ const origin = process.env.origin
 import { corsOpt } from './config/config'
 import { morganOpt } from './config/config'
 
+
 /* <-- DB Connection --> */
 mongoose.connect(DB,
    { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to DB!'),
 );
-
-  
-
-
 
 /* <-- Import Routes --> */
 const searchRoute = require('./routes/search');
@@ -54,3 +53,4 @@ app.get('*', (req, res) => {
 
 /* <-- Server Start --> */
 app.listen(PORT, () => console.log(`Server is runnning on PORT = ${PORT}.`));
+
