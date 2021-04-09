@@ -6,7 +6,7 @@
   "scripts": {
     "run": "pm2 start app/handler/handler.js",
     "start api": "pm2 start app/api/index.js",
-    "start logs": "pm2 start app/logs/usage-log.js ",
+    "start logs": "pm2 start app/logs/usage-log.js",
     "npm start webserver": "ng serve --open",
     "stop": "pm2 stop all",
     "restart": "pm2 restart all",

@@ -23,5 +23,5 @@ const usageDatas = [
 
 ];
 
-setInterval(function(){ console.table(usageDatas); }, 3000);
+setInterval(function(){ console.table(usageDatas); }, 3600000);
 
