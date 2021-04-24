@@ -6,6 +6,10 @@ const url = require('url');
 var express = require('express');
 var router = express.Router();
 
+let foundshort = false;
+let shortprov = ["bit.ly", "goo.gl", "tinyurl.com", "ow.ly", "is.gd", "buff.ly", "bit.do", "auf.ly", "mcaf.ee", "su.pr", "bl.ink", "tiny.one", "moourl.comm"];
+
+//  if (message.content.toLowerCase().includes(ignoreWord[i].toLowerCase())) foundInTextWord = true;
 
 ////////////////////////////
 //                        //
@@ -17,6 +21,14 @@ var router = express.Router();
 router.get('/scan', (req, res, next) => {
 
   const reqUrl = req.query.url
+
+if (shortprov.includes(reqUrl)) {
+   // req to expander
+   // then
+   // get data req
+   // else then
+}
+
 
   let urlObject = reqUrl.parse(address, true);
 
