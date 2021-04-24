@@ -5,7 +5,8 @@ import { UrlscannerComponent } from './urlscanner/urlscanner.component';
 
 const routes: Routes = [
 { path: 'home', component: HomeComponent},
-{ path: 'urlscanner', component: UrlscannerComponent}
+{ path: 'urlscanner', component: UrlscannerComponent},
+{ path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

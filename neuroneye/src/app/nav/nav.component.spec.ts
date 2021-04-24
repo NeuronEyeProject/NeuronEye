@@ -7,6 +7,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+
 import { NavComponent } from './nav.component';
 
 describe('NavComponent', () => {
@@ -24,6 +27,9 @@ describe('NavComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
+        MatButtonModule,
+        MatDialogModule,
+        MatInputModule
       ]
     }).compileComponents();
   }));
