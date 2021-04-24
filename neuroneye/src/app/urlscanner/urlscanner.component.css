@@ -1,9 +1,31 @@
-.search-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
+
   
   .search-full-width {
     width: 100%;
+  }
+
+  .spinner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-container {
+    margin: 20px;
+  }
+  
+  .search-form {
+    position: absolute;
+    top: 340px;
+    left: 130px;
+    right: 130px;
+    bottom: 300px;
+  }
+
+  .logo-cent {
+    position: absolute;
+    top: 42px;
+    left: 130px;
+    right: 130px;
+    bottom: 10px;
   }
