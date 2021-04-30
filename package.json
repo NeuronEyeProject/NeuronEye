@@ -4,7 +4,7 @@
   "description": "<p align=\"neuroneye webapp\">",
   "main": "execute.js",
   "scripts": {
-   "execute": "pm2 start execute.js",
+    "execute": "pm2 start execute.js",
     "stop": "pm2 stop all",
     "restart": "pm2 restart all",
     "logs": "pm2 logs"
@@ -30,6 +30,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-generator": "^4.16.1",
+    "express-rate-limit": "^5.2.6",
     "moment": "^2.29.1",
     "mongoose": "^5.11.19",
     "morgan": "^1.10.0",
