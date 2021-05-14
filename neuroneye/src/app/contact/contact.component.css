@@ -71,4 +71,19 @@
     text-align: center;
   }
   
-  
+  .discord-logo-icon {
+    scale: 10%;
+    width: 10%;
+  }
+
+  .email-icon {
+     width: 10%;
+     position: relative;
+  }
+
+  .support-icon {
+    position: absolute;
+    width: 10%;
+    top: 1px;
+    left: 10px;
+  }

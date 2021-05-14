@@ -8,8 +8,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class UrlscannerComponent implements OnInit {
 
- api_url = `http://localhost:3000/api/v1/url/scan?url=`
+ 
  reqURL=""
+ api_url = `http://localhost:3000/api/v1/url/scan?url=${this.reqURL}`
 
 
 
@@ -21,7 +22,7 @@ getValue(val) {
 
 
   constructor(private http: HttpClient) { 
-    this.http.get(this.api_url + this.reqURL)
+    this.http.get(this.api_url)
     .subscribe(data => alert(data))
     
   
