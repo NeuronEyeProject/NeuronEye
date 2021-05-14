@@ -1,4 +1,4 @@
-var whitelist = ['https://neuroneye.net/', 'https://app.neuroneye.net', 'localhost']
+var whitelist = ['https://neuroneye.net/', 'https://app.neuroneye.net', 'localhost:3000', 'localhost:4200']
 
 export var corsOpt = {
 

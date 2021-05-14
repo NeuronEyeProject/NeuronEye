@@ -73,7 +73,7 @@
 
 ### Information
 
-NeuronEye is a project started in spring 2021. NeuronEye is a Web Application with Cybersafety features in the area of URL's. NeuronEye have a large updated Database with potiential threat URL's. Expand short URL's and see what's masked behind them. The web application also offers a user-friendly interface for each user.
+NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the URL Website is contained of Cyberthreats. We are trying to make a new OSINT Tool for Security Researches. We have a flex Database that will updated with time. The web application also offers a user-friendly interface for each user. Don't judge us because of bas Frontend :D.
 
 ### Built With
 

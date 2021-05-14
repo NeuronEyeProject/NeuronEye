@@ -19,3 +19,54 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+.middle-small-logo {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  bottom: 100px;
+
+  
+}
+
+.footer {
+  position: relative;
+  top: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.footer {
+  position: relative;
+  left: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+

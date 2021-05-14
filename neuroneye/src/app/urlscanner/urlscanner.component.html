@@ -1,16 +1,16 @@
 
 
-<img class="logo-cent" src="../assets/images/logofneuroneyetxt.png" />
-
-<form class="search-form">
-    <mat-form-field class="search-full-width">
-      <mat-label>URL Scanner</mat-label>
-      <input matInput placeholder="URL" value="" matInput="URL">
-    </mat-form-field>
-
-  </form>
+<img class="logo-img" src="../assets/images/logoneuroneyebig.png" />
 
 
+<div class="search-wrapper">
+	
+  <input type="text" placeholder="Enter URL or Domain" class="search-box" #url />
+  <button class="search-button" (click)="getValue(url.value)">Search</button>
+</div>
 
-  
-  
+
+
+<div class="footer">
+  <p>© Copyright 2021, R. Iannelli</p>
+</div>

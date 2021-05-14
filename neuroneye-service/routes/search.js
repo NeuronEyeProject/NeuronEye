@@ -28,29 +28,46 @@ router.get('/scan', async (req, res, next) => {
       if (reqUrl.toLowerCase().includes(shortprov[i].toLowerCase())) foundshort = true;
   }
   if(foundshort = true){ 
-    const api_url = `http://localhost:3000/api/v1/url/expander?url=${reqUrl}`
-    const fetch_res = await fetch(api_url)
+    const api_url = `http://localhost:3000/api/v1/url/expander?url=`
+    const fetch_res = await fetch(api_url + reqUrl)
     const json_res = await fetch_res.json()
 
     let endsDomain = json_res.domain /// end data
     let endURL = json_res.url /// end data
-   
+
+    URLList.find({ domain: `${endsDomain}`})
+    .exec()
+    .then(ifFound => {
+      if (ifFound) {
+        res.status(200).json(ifFound, { found: true } );
+      } else {
+          res.status(404).json({ message: "No Link found from the provided Domain", found: false });
+      }
+    })
+    .catch(err => {
+      res.status(500).json({ error: err });
+});
+
+  } else {
+    
+    URLList.find({ domain: `${reqUrl.domain}`})
+    .exec()
+    .then(ifFound => {
+      if (ifFound) {
+        res.status(200).json(ifFound, { found: true } );
+      } else {
+          res.status(404).json({ message: "No Link found from the provided Domain", found: false });
+      }
+    })
+    .catch(err => {
+      res.status(500).json({ error: err });
+});
+
   }
 
-  const domainObject = endsDomain
+  
 
-  URLList.find({ domain: `${domainObject}`})
-      .exec()
-      .then(ifFound => {
-        if (ifFound) {
-          res.status(200).json(ifFound, { found: true } );
-        } else {
-            res.status(404).json({ message: "No Link found from the provided Domain", found: false });
-        }
-      })
-      .catch(err => {
-        res.status(500).json({ error: err });
-  });
+
   }
 
   databaseSearch()
