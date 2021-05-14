@@ -9,10 +9,7 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 })
 export class ContactComponent {
 
-  contentA = "NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the URL Website is contained of Cyberthreats. We are trying to make a new OSINT Tool for Security Researches. We have a flex Database that will updated with time. The web application also offers a user-friendly interface for each user." // ATheProject
-  contentB = "Hey I'm Dev" // ATheDev
-  contentC = "We are collecting threated URL/Domains from diffrent Sources and putting them in one." // Source
-
+  contentA = "." // ATheProject
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
