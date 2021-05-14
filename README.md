@@ -86,12 +86,7 @@ NeuronEye is a project started in spring 2021. NeuronEye is a Web Application wh
 <!-- Checklist -->
 ### Release Checklist
 
-- [ X ] UI/UX Design
-- [ X ] API 
-- [ ]  Frontend
-- [ ]  Backend
-- [ ] Tests
-- [ ] Deployment
+Test & Fixing Error Phase
 
 
 
