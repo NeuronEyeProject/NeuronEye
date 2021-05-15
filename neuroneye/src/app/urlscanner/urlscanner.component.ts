@@ -9,21 +9,21 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class UrlscannerComponent implements OnInit {
 
  
- reqURL=""
- api_url = `http://localhost:3000/api/v1/url/scan?url=${this.reqURL}`
+ reqDomain=""
+ api_url = `http://localhost:3000/api/v1/url/search`
 
 
 
 getValue(val) {
-  this.reqURL=val
-  console.log("Input:", this.reqURL)
+  this.reqDomain=val
+  console.log("Input:", this.reqDomain)
 }
   
 
 
   constructor(private http: HttpClient) { 
-    this.http.get(this.api_url)
-    .subscribe(data => alert(data))
+    this.http.get(this.api_url + this.reqDomain)
+    .subscribe(data => console.log(data))
     
   
   }
