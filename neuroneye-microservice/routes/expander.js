@@ -1,4 +1,4 @@
-const URLList = require("../model/urlSchema");
+const URLList = require("../model/domainSchema");
 const request = require('request');
 const chalk = require('chalk');
 const url = require('url');
@@ -15,9 +15,9 @@ var router = express.Router();
 ////////////////////////////
 
 /* <-- Url Expander --> */
-router.get('/expander/:url', (req, res, next) => {
+router.get('/expander', (req, res, next) => {
 
-    const reqUrl = req.params.url
+    const reqUrl = req.query.url
   
   function expander() {
   

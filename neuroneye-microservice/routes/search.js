@@ -1,14 +1,14 @@
-const URLList = require("../model/urlSchema");
+const domains = require("../model/domainSchema");
 const request = require('request');
 const chalk = require('chalk');
 const url = require('url');
 const fetch = require("node-fetch");
+const mongoose = require("mongoose")
+
 
 var express = require('express');
 var router = express.Router();
 
-let foundshort = false
-let shortprov = ["bit.ly", "goo.gl", "tinyurl.com", "ow.ly", "is.gd", "buff.ly", "bit.do", "auf.ly", "mcaf.ee", "su.pr", "bl.ink", "tiny.one", "moourl.comm"];
 
 
 ////////////////////////////
@@ -17,29 +17,54 @@ let shortprov = ["bit.ly", "goo.gl", "tinyurl.com", "ow.ly", "is.gd", "buff.ly",
 //                        //
 ////////////////////////////
 
-/* <--  domain --> */
+
+
+ /*  <-- Search Domain -->   */
 router.get('/search/:domain', async (req, res, next) => {
 
-  const reqDomain = req.params.domain
+  let date_ob = new Date();
+
+  const reqDomain = String(req.params.domain)
 
   console.log(reqDomain)
 
-    URLList.find({ domain: `${reqDomain}`})
+    domains.find({ domain: reqDomain })
     .exec()
-    .then(ifFound => {
-      if (ifFound) {
-        res.status(200).json(ifFound, { found: true } );
+    .then(doc => {
+      console.log(doc)
+      if (doc) {
+        res.status(200).json({ message: "domain found", status: true, HTTP_CODE: 200, domain: reqDomain, date: date_ob} );
       } else {
-          res.status(404).json({ message: "No Link found from the provided Domain", found: false });
+          res.status(404).json({ message: "domain not in database", status: false, HTTP_CODE: 404, domain: reqDomain, date: date_ob});
       }
+    }).catch(err => {
+      res.status(500).json({ error: err });
+});
+
+});
+
+
+/* Add Domain */
+router.post("/add", (req, res, next) => {
+  const domainq = new domains({
+    _id: new mongoose.Types.ObjectId(),
+    domain: req.body.domain,
+  });
+  domainq
+    .save()
+    .then(result => {
+      console.log(result);
+      res.status(201).json({
+        message: "Handling POST requests to /products",
+        createdProduct: result
+      });
     })
     .catch(err => {
-      res.status(500).json({ error: err });
-      console.log(chalk.red(err))
+      console.log(err);
+      res.status(500).json({
+        error: err
+      });
+    });
 });
-
-});
-
-
 
 module.exports = router;

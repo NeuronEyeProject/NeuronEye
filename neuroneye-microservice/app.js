@@ -6,6 +6,8 @@ const dotenv = require('dotenv');
 const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
+const chalk = require('chalk');
+const bodyParser = require("body-parser")
 
 // ROUTES
 const indexRouter = require('./routes/index');
@@ -22,7 +24,7 @@ const DB = process.env.DB_CONNECT
 
 
 // DATABASE CONNECTION
-mongoose.connect(DB,
+mongoose.connect("mongodb+srv://testUser:testUser@2000@neuroneyecluster.8kgfa.mongodb.net/test?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to Database!'),
 );
@@ -45,14 +47,15 @@ var corsOptions = {
 }
 
 // MIDDLEWARES
-app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(rLimit);
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // SECURITY MIDDLEWARES
 app.use(helmet());
-app.disable('x-powered-by');
+app.use(cors(corsOptions));
 
 // ROUTES
 app.use('/api/', indexRouter);
@@ -60,6 +63,6 @@ app.use('/api/v1/url', searchRoute);
 app.use('/api/v1/url', expanderRoute);
 
 
-app.listen(PORT, () => {
-  console.log(chalk.blue(`Express Server | Active on * http://localhost:${port} *`))
+app.listen(PORT || 3000, () => {
+  console.log(chalk.blue(`Express Server | Active on * http://localhost:${PORT} *`))
 })

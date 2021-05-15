@@ -25,6 +25,8 @@ import { FormsModule } from '@angular/forms';
 import { UrlscannerComponent } from './urlscanner/urlscanner.component';
 import { InterceptorService } from './loader/interceptor.service';
 import { ContactComponent } from './contact/contact.component';
+import { DangersiteComponent } from './dangersite/dangersite.component';
+import { GoodsiteComponent } from './goodsite/goodsite.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     HomeComponent,
     UrlscannerComponent,
-    ContactComponent
+    ContactComponent,
+    DangersiteComponent,
+    GoodsiteComponent
   ],
   imports: [
     ReactiveFormsModule,
