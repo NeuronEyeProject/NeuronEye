@@ -20,3 +20,64 @@
   .dashboard-card-content {
     text-align: center;
   }
+
+  .footer {
+    position: absolute;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+
+  .shield-icon {
+    position: relative;
+    width: 30%;
+    top: 150px;
+    right: 300px;
+  }
+
+  .text-content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .return-button {
+    box-shadow:inset 0px 0px 15px 3px #ff0000;
+    background:linear-gradient(to bottom, #ff0000 5%, #000000 100%);
+    background-color:#ff0000;
+    border-radius:17px;
+    border:1px solid #0f0701;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    padding:6px 13px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .return-button:hover {
+    background:linear-gradient(to bottom, #000000 5%, #ff0000 100%);
+    background-color:#000000;
+
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .return-button:active {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
