@@ -20,7 +20,7 @@ var router = express.Router();
 
 
  /*  <-- Search Domain -->   */
-router.get('/search/:domain', async (req, res, next) => {
+router.get('/:domain', async (req, res, next) => {
 
   let date_ob = new Date();
 
@@ -44,7 +44,7 @@ router.get('/search/:domain', async (req, res, next) => {
 });
 
 
-/* Add Domain */
+/* Add Domain 
 router.post("/add", (req, res, next) => {
   const domainq = new domains({
     _id: new mongoose.Types.ObjectId(),
@@ -66,5 +66,6 @@ router.post("/add", (req, res, next) => {
       });
     });
 });
+*/
 
 module.exports = router;

@@ -10,7 +10,7 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 export class HomeComponent {
   /** Based on the screen size, switch from standard to one column per row */
 
-  contentA = "NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the URL Website is contained of Cyberthreats. We are trying to make a new OSINT Tool for Security Researches. We have a flex Database that will updated with time. The web application also offers a user-friendly interface for each user." // ATheProject
+  contentA = "NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the domain respectively the website is contained of cyberthreats. We are trying to make a new OSINT tool for security researches. We have a database that will updated with time. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it." // ATheProject
   contentB = "Soon....." // ATheDev
   contentC = "Soon....." // Source
 

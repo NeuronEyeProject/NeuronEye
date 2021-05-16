@@ -6,7 +6,7 @@ const url = require('url');
 var express = require('express');
 var router = express.Router();
 
-//http://localhost:3000/api/v1/url/expander?url=<url>
+//http://localhost:3000/api/v1/domain/expander/url?url=<url>
 
 ////////////////////////////
 //                        //
@@ -15,7 +15,7 @@ var router = express.Router();
 ////////////////////////////
 
 /* <-- Url Expander --> */
-router.get('/expander', (req, res, next) => {
+router.get('/url', (req, res, next) => {
 
     const reqUrl = req.query.url
   

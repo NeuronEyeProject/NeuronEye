@@ -59,8 +59,8 @@ app.use(cors(corsOptions));
 
 // ROUTES
 app.use('/api/', indexRouter);
-app.use('/api/v1/url', searchRoute);
-app.use('/api/v1/url', expanderRoute);
+app.use('/api/v1/domain/search', searchRoute);
+app.use('/api/v1/domain/expander', expanderRoute);
 
 
 app.listen(PORT || 3000, () => {
