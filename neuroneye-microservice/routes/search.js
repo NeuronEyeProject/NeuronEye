@@ -31,7 +31,6 @@ router.get('/:domain', async (req, res, next) => {
     domains.find({ domain: reqDomain })
     .exec()
     .then(doc => {
-      console.log(doc)
       if (doc) {
         res.status(200).json({ message: "domain found", status: true, HTTP_CODE: 200, domain: reqDomain, date: date_ob} );
       } else {

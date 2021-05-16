@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpResponseBase } from '@angular/common/http';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { getLocaleDateFormat } from '@angular/common';
+import { coerceStringArray } from '@angular/cdk/coercion';
 
 @Component({
   selector: 'app-urlscanner',
@@ -23,7 +24,7 @@ getValue(val) {
 
 httpReq() {
   this.getData()
-
+   console.log(this.resp)
 }
   
 
