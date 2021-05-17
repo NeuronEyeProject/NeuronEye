@@ -36,7 +36,7 @@ httpReq() {
 
     this.http.get<any>(this.api_url + this.reqDomain).subscribe(
       Response => {
-        this.resp == Response;
+        this.resp = Response;
       }
     )
     }

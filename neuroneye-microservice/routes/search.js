@@ -24,11 +24,11 @@ router.get('/:domain', async (req, res, next) => {
 
   let date_ob = new Date();
 
-  const reqDomain = String(req.params.domain)
+  const reqDomain = req.params.domain
 
   console.log(reqDomain)
 
-    domains.find({ domain: reqDomain })
+    domains.findOne({ domain: reqDomain })
     .exec()
     .then(doc => {
       if (doc) {
