@@ -24,7 +24,7 @@ const DB = process.env.DB_CONNECT
 
 
 // DATABASE CONNECTION
-mongoose.connect("mongodb+srv://testUser:testUser@2000@neuroneyecluster.8kgfa.mongodb.net/test?retryWrites=true&w=majority",
+mongoose.connect(`${DB}`,
   { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to Database!'),
 );
