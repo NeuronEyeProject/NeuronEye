@@ -30,10 +30,10 @@ mongoose.connect(`${DB}`,
 );
 
 
-// RATE LIMIT | 1s = 2req
+// RATE LIMIT | 1s = 15req
 const rLimit = rateLimit({ 
   windowMs: 1000,
-  max: 2 
+  max: 15 
 });
 
 
