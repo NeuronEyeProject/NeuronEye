@@ -23,7 +23,7 @@ getValue(val) {
 }
 
 httpReq() {
-  this.getData()
+  this.getDataAndResult()
    console.log(this.resp)
 }
   
@@ -32,13 +32,23 @@ httpReq() {
   constructor(private http: HttpClient) { }
 
 
-   getData() { 
+   getDataAndResult() { 
 
     this.http.get<any>(this.api_url + this.reqDomain).subscribe(
-      Response => {
-        this.resp = Response;
+      response => {
+        this.resp = response;
+
+       if (response.status = 200) {
+        // redirect to 200 (threat)
+        window.location.href="https://app.neuroneye/dangersite"
+       } else if (response.status = 200) { 
+       // redirect to 404 (safe)
+       window.location.href="https://app.neuroneye/goodsite"
       }
-    )
+
+      })
+
+   
     }
   
     
