@@ -18,6 +18,8 @@ export class HomeComponent {
       if (matches) {
         return [
           { content: this.contentA ,title: 'About This Project', cols: 2, rows: 1 },
+          { content: this.contentA ,title: 'About This Project', cols: 2, rows: 1 },
+
 
 
  
@@ -26,6 +28,8 @@ export class HomeComponent {
 
       return [
         { content: this.contentA ,title: 'About This Project', cols: 2, rows: 1 },
+          { content: this.contentA ,title: 'About This Project', cols: 2, rows: 1 },
+  
     
       ];
     })
