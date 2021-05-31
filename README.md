@@ -26,17 +26,15 @@
     <img src="md/images/neuroneye-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">NeuronEye</h3>
+  <h3 align="center">NeuronEye | Beta Version</h3>
 
   <p align="center">
     The NeuronEye Web Application
     <br />
-    <a href="https://neuroneye.net/"><strong>Explore our Website »</strong></a>
+    <a href="https://neuroneye.net/"><strong>Explore our Webapp »</strong></a>
     <br />
     <br />
-    <a href="https://neuroneye.net/">Website</a>
-    ·
-    <a href="https://app.neuroneye.net/">Webapp</a>
+    <a href="https://neuroneye.net/">Webapp</a>
     ·
     <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Report Bug</a>
     ·
@@ -72,6 +70,8 @@
 ## About The Project
 
 ### Information
+
+Beta Version: Planned for 02.06.2021 (EUW)
 
 NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the domain respectively the website is contained of cyberthreats. We are trying to make a new OSINT tool for security researches. We have a database that will updated with time. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
 
