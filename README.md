@@ -73,7 +73,7 @@
 
 Beta Version: Planned for 02.06.2021 (EUW)
 
-NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the domain respectively the website is contained of cyberthreats. We are trying to make a new OSINT tool for security researches. We have a database that will updated with time. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
+NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the domain respectively the website is contained of cyberthreats. We are trying to make a new OSINT tool for security researches and also a new tool for the safety of others. We have a database that will updated with time. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
 
 ### Built With
 

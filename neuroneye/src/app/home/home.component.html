@@ -1,6 +1,13 @@
+<mat-card>
+  BY ENTERING THE WEBSITE YOU AGREE TO THE 
+  <a href="https://github.com/NeuronEyeProject/NeuronEye/blob/main/privacypolicy.md" target="blank">PRIVACY POLICY 📃</a> 
+  AND COOKIE POLICY 
+  <a href="https://github.com/NeuronEyeProject/NeuronEye/blob/main/cookiepolicy.md" target="blank">COOKIE POLICY 🍪</a>
+</mat-card>
+
 <div class="grid-container">
   <h1 class="mat-h1">Welcome to NeuronEye</h1>
-  <mat-card>BY ENTERING THE WEBSITE YOU AGREE TO THE PRIVACY POLICY AND COOKIE POLICY</mat-card>
+ 
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -17,6 +24,39 @@
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
+
+  <mat-divider></mat-divider>
+
+  <mat-card class="discord-card">
+  <mat-card-title>
+   Discord
+  </mat-card-title>
+<mat-card-content class="dashboard-card-content">
+  <div>
+    <a href="https://discord.gg/FGzCdtP" > Join our Discord Server by clicking here. </a>
+  </div>
+</mat-card-content>
+  </mat-card>
+
+
+  <mat-divider></mat-divider>
+
+
+  <mat-card class="github-card">
+    <mat-card-title>
+     Github
+    </mat-card-title>
+  <mat-card-content class="dashboard-card-content">
+    <div>
+      <a href="https://github.com/NeuronEyeProject/NeuronEye" > Visit our Github by clicking here. </a>
+    </div>
+  </mat-card-content>
+    </mat-card>
+
+
+  <mat-divider></mat-divider>
+
+
 
 
 </div>
