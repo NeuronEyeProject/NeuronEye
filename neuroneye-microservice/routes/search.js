@@ -43,28 +43,5 @@ router.get('/:domain', async (req, res, next) => {
 });
 
 
-/* Add Domain 
-router.post("/add", (req, res, next) => {
-  const domainq = new domains({
-    _id: new mongoose.Types.ObjectId(),
-    domain: req.body.domain,
-  });
-  domainq
-    .save()
-    .then(result => {
-      console.log(result);
-      res.status(201).json({
-        message: "Handling POST requests to /products",
-        createdProduct: result
-      });
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json({
-        error: err
-      });
-    });
-});
-*/
 
 module.exports = router;

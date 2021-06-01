@@ -4,7 +4,7 @@
   "description": "<p align=\"neuroneye webapp\">",
   "main": "neuroneye-microservice/app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js" 
   },
   "keywords": [],
   "repository": {

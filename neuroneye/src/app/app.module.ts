@@ -21,10 +21,10 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { UrlscannerComponent } from './urlscanner/urlscanner.component';
 import { InterceptorService } from './loader/interceptor.service';
-import { ContactComponent } from './contact/contact.component';
 import { DangersiteComponent } from './dangersite/dangersite.component';
 import { GoodsiteComponent } from './goodsite/goodsite.component';
 
@@ -34,11 +34,11 @@ import { GoodsiteComponent } from './goodsite/goodsite.component';
     NavComponent,
     HomeComponent,
     UrlscannerComponent,
-    ContactComponent,
     DangersiteComponent,
     GoodsiteComponent
   ],
   imports: [
+    MatSnackBarModule,
     ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
