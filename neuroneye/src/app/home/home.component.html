@@ -1,5 +1,6 @@
 <div class="grid-container">
   <h1 class="mat-h1">Welcome to NeuronEye</h1>
+  <mat-card>BY ENTERING THE WEBSITE YOU AGREE TO THE PRIVACY POLICY AND COOKIE POLICY</mat-card>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -16,7 +17,13 @@
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
+
+
 </div>
+
+
+
+
 
 <div class="footer">
   <p>© Copyright 2021, R. Iannelli</p>
