@@ -20,11 +20,11 @@ const app = express();
 // ENV
 dotenv.config();
 const PORT = process.env.PORT
-const DB = process.env.DB_CONNECT
+
 
 
 // DATABASE CONNECTION
-mongoose.connect(`${DB}`,
+mongoose.connect(`http://127.0.0.1:27017`,
   { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to Database!'),
 );

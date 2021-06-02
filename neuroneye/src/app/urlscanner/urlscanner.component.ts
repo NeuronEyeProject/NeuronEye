@@ -40,10 +40,10 @@ httpReq() {
 
        if (response.status = 200) {
         // redirect to 200 (threat)
-        window.location.href="https://app.neuroneye/dangersite"
+        window.location.href="https://neuroneye/dangersite"
        } else if (response.status = 200) { 
        // redirect to 404 (safe)
-       window.location.href="https://app.neuroneye/goodsite"
+       window.location.href="https://neuroneye/goodsite"
       }
 
       })
