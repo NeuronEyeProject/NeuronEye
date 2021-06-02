@@ -28,7 +28,7 @@ router.get('/:domain', async (req, res, next) => {
 
   console.log(reqDomain)
 
-    domains.findOne({ domain: reqDomain })
+    domains.find({ domain: reqDomain })
     .exec()
     .then(doc => {
       if (doc) {
