@@ -61,5 +61,5 @@ app.use('/api/v1/domain/expander', expanderRoute);
 
 
 app.listen(2300, () => {
-  console.log(chalk.blue(`Express Server | Active on * http://localhost:${PORT} *`))
+  console.log(chalk.blue(`Express Server | Active on * http://localhost:2300 *`))
 })
