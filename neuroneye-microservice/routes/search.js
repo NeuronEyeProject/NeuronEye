@@ -22,8 +22,6 @@ var router = express.Router();
  /*  <-- Search Domain -->   */
 router.get('/:domain', async (req, res, next) => {
 
-  let date_ob = new Date();
-
   const reqDomain = req.params.domain
 
   console.log(reqDomain)
@@ -32,13 +30,11 @@ router.get('/:domain', async (req, res, next) => {
     .exec()
     .then(doc => {
       if (doc) {
-        res.status(200).json({ message: "domain found", status: true, HTTP_CODE: 200, domain: reqDomain, date: date_ob} );
+        res.status(200).json({ message: "domain found", status: true, HTTP_CODE: 200, domain: reqDomain});
       } else {
-          res.status(404).json({ message: "domain not in database", status: false, HTTP_CODE: 404, domain: reqDomain, date: date_ob});
+          res.status(404).json({ message: "domain not in database", status: false, HTTP_CODE: 404, domain: reqDomain });
       }
-    }).catch(err => {
-      res.status(500).json({ error: err });
-});
+    })
 
 });
 
