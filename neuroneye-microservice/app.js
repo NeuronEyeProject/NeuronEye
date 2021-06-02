@@ -17,9 +17,6 @@ const expanderRoute = require('./routes/expander');
 // EXPRESS APP
 const app = express();
 
-// ENV
-dotenv.config();
-const PORT = process.env.PORT
 
 
 
@@ -63,6 +60,6 @@ app.use('/api/v1/domain/search', searchRoute);
 app.use('/api/v1/domain/expander', expanderRoute);
 
 
-app.listen(PORT || 3000, () => {
+app.listen(2300, () => {
   console.log(chalk.blue(`Express Server | Active on * http://localhost:${PORT} *`))
 })
