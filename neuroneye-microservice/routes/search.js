@@ -9,17 +9,31 @@ const mongoose = require("mongoose")
 var express = require('express');
 var router = express.Router();
 
-
+const domains = require('../data/domain.json');
 
 ////////////////////////////
 //                        //
-//     URL Check DB       //
+//     URL Check          //
 //                        //
 ////////////////////////////
 
 
+router.get('/:domain', (request, response) => {
+  const domainName = String(request.params.domain);
+  const getDomain = domains.find((domain) => domain.name === domainName);
 
- /*  <-- Search Domain -->   */
+  if (!getDomain) {
+    response.status(404).send({ message: "domain not found" });
+  } else {
+    response.status(200).send({ message: "domain found" });
+  }
+});
+
+
+
+/*
+
+ /*  <-- Search Domain -->   
 router.get('/:domain', async (req, res, next) => {
 
   const reqDomain = req.params.domain
@@ -37,7 +51,7 @@ router.get('/:domain', async (req, res, next) => {
     })
 
 });
-
+*/
 
 
 module.exports = router;
