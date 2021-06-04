@@ -13,6 +13,7 @@ export class UrlscannerComponent  {
 
   resp=[];
  reqDomain=""
+ 
  api_url = `http://localhost:2300/api/v1/domain/search/`
 
 
@@ -41,7 +42,7 @@ httpReq() {
        if (response.status = 200) {
         // redirect to 200 (threat)
         window.location.href="http://neuroneye/dangersite"
-       } else if (response.status = 200) { 
+       } else if (response.status = 404) { 
        // redirect to 404 (safe)
        window.location.href="http://neuroneye/goodsite"
       }
