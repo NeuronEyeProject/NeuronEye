@@ -2,7 +2,6 @@
 const helmet = require('helmet');
 const express = require('express');
 const logger = require('morgan');
-const dotenv = require('dotenv');
 const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
@@ -17,14 +16,11 @@ const expanderRoute = require('./routes/expander');
 // EXPRESS APP
 const app = express();
 
-// ENV
-dotenv.config();
-const PORT = process.env.PORT
-const DB = process.env.DB_CONNECT
+
 
 
 // DATABASE CONNECTION
-mongoose.connect(`${DB}`,
+mongoose.connect(`mongodb://127.0.0.1:27017`,
   { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to Database!'),
 );
@@ -39,7 +35,7 @@ const rLimit = rateLimit({
 
 // CORS OPTIONS
 var corsOptions = {
-  origin: 'http://localhost:4200',
+  origin: 'http://neuroneye.net',
   methods: ['GET'],
   allowedHeaders: ['Origin','X-Requested-With','contentType','Content-Type','Accept','Authorization'],
   credentials: true,
@@ -63,6 +59,6 @@ app.use('/api/v1/domain/search', searchRoute);
 app.use('/api/v1/domain/expander', expanderRoute);
 
 
-app.listen(PORT || 3000, () => {
-  console.log(chalk.blue(`Express Server | Active on * http://localhost:${PORT} *`))
+app.listen(2300, () => {
+  console.log(chalk.blue(`Express Server | Active on * http://localhost:2300 *`))
 })
