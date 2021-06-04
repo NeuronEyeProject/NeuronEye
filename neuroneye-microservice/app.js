@@ -35,7 +35,7 @@ const rLimit = rateLimit({
 
 // CORS OPTIONS
 var corsOptions = {
-  origin: 'http://neuroneye.net',
+  origin: 'http://localhost:4200',
   methods: ['GET'],
   allowedHeaders: ['Origin','X-Requested-With','contentType','Content-Type','Accept','Authorization'],
   credentials: true,
