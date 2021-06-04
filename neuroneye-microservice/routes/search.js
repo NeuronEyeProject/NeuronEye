@@ -18,7 +18,7 @@ var router = express.Router();
 ////////////////////////////
 
 
-
+//
 
  /*  <-- Search Domain -->   */
  router.get('/:domain', async (req, res, next) => {
