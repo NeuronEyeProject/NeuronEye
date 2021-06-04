@@ -2,7 +2,6 @@
 const helmet = require('helmet');
 const express = require('express');
 const logger = require('morgan');
-const dotenv = require('dotenv');
 const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
