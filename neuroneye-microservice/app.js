@@ -21,7 +21,7 @@ const app = express();
 
 
 // DATABASE CONNECTION
-mongoose.connect(`http://127.0.0.1:27017`,
+mongoose.connect(`mongodb://127.0.0.1:27017`,
   { useNewUrlParser: true, useUnifiedTopology: true},
 () => console.log('Connected to Database!'),
 );
