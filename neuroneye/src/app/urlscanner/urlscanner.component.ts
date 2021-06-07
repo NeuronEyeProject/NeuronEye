@@ -14,7 +14,7 @@ export class UrlscannerComponent  {
   resp=[];
  reqDomain=""
  
- api_url = `http://localhost:3000/api/v1/domain/search/`
+ api_url = `http://neuroneye.net/devapi/v1/domain/search/`
 
 
 

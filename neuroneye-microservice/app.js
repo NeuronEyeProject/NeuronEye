@@ -29,7 +29,7 @@ mongoose.connect(`mongodb://127.0.0.1:27017`,
 // RATE LIMIT | 1s = 15req
 const rLimit = rateLimit({ 
   windowMs: 1000,
-  max: 15 
+  max: 10 
 });
 
 
