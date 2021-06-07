@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
 const chalk = require('chalk');
-const bodyParser = require("body-parser")
+
 
 // ROUTES
 const indexRouter = require('./routes/index');
@@ -46,8 +46,6 @@ var corsOptions = {
 app.use(logger('dev'));
 app.use(express.json());
 app.use(rLimit);
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 // SECURITY MIDDLEWARES
 app.use(helmet());
@@ -55,10 +53,10 @@ app.use(cors(corsOptions));
 
 // ROUTES
 app.use('/api/', indexRouter);
-app.use('/api/v1/domain/search', searchRoute);
-app.use('/api/v1/domain/expander', expanderRoute);
+app.use('/api/v1/domain/', searchRoute);
+app.use('/api/v1/domain/', expanderRoute);
 
 
-app.listen(2300, () => {
-  console.log(chalk.blue(`Express Server | Active on * http://localhost:2300 *`))
+app.listen(3000, () => {
+  console.log(chalk.blue(`Express Server | Active on * http://localhost:3000 *`))
 })

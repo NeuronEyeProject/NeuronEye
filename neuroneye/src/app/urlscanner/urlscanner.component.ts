@@ -14,7 +14,7 @@ export class UrlscannerComponent  {
   resp=[];
  reqDomain=""
  
- api_url = `http://localhost:2300/api/v1/domain/search/`
+ api_url = `http://localhost:3000/api/v1/domain/search/`
 
 
 
@@ -23,10 +23,7 @@ getValue(val) {
   console.log("Input:", this.reqDomain)
 }
 
-httpReq() {
-  this.getDataAndResult()
-   console.log(this.resp)
-}
+
   
 
 
@@ -38,6 +35,8 @@ httpReq() {
     this.http.get<any>(this.api_url + this.reqDomain).subscribe(
       response => {
         this.resp = response;
+
+        console.log(this.resp)
 
        if (response.status = 200) {
         // redirect to 200 (threat)

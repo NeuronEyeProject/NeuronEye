@@ -15,7 +15,7 @@ var router = express.Router();
 ////////////////////////////
 
 /* <-- Url Expander --> */
-router.get('/url', (req, res, next) => {
+router.get('/expander/url', (req, res, next) => {
 
     const reqUrl = req.query.url
   
