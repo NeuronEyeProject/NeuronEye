@@ -32,11 +32,8 @@ router.get('/search/:domain', async  (req, res, next) => {
           res.status(404).json({ message: "domain not in database", status: false, HTTP_CODE: 404, domain: reqDomain });
       }
     })
-    .catch(err => {
-      res.status(500).json({ error: err });
 });
 
-});
 
  /*  <-- Search Domain -->   
  router.get('/search/:domain', async (req, res, next) => {
