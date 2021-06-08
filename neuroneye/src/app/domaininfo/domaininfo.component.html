@@ -1,1 +1,47 @@
-<p>domaininfo works!</p>
+<mat-card>
+    BY ENTERING THE WEBSITE YOU AGREE TO THE 
+    <a href="https://github.com/NeuronEyeProject/NeuronEye/blob/main/privacypolicy.md" target="blank">PRIVACY POLICY 📃</a> 
+  </mat-card>
+
+
+
+<mat-tab-group>
+
+
+    <mat-tab label="DNS Lookup"> 
+        
+        <img class="logo-img" src="../assets/images/logoneuroneyebig.png" />
+  
+  
+        <div class="search-wrapper">
+            
+          <input type="text" placeholder="Enter Domain" class="search-box" #domain matTooltip="Input a domain" />
+          <button  matTooltip="Lookup a domain" class="search-button" (click)="getValueLookup(domain.value)" (click)="getDataAndResultLookup()">Lookup DNS</button>
+      
+        </div>
+
+    </mat-tab>
+
+
+    <mat-tab label="Whois Records">
+
+           <img class="logo-img" src="../assets/images/logoneuroneyebig.png" />
+  
+  
+  <div class="search-wrapper">
+      
+    <input type="text" placeholder="Enter Domain" class="search-box" #domaiin matTooltip="Input a domain" />
+    <button  matTooltip="Get Whois records of domain" class="search-button" (click)="getValueWhois(domaiin.value)" (click)="getDataAndResultWhois()">Fetch Whois</button>
+
+  </div>
+    </mat-tab>
+
+
+
+
+
+  </mat-tab-group>
+
+  <div class="footer">
+    <p>© Copyright 2021, R. Iannelli</p>
+  </div>

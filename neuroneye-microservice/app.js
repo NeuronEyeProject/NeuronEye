@@ -11,6 +11,8 @@ const chalk = require('chalk');
 // ROUTES
 const indexRouter = require('./routes/index');
 const expanderRoute = require('./routes/expander');
+const whoisRoute = require('./routes/whois');
+const dnsLookupRoute = require('./routes/dnslookup')
 
 // EXPRESS APP
 const app = express();
@@ -45,6 +47,8 @@ app.use(cors(corsOptions));
 // ROUTES
 app.use('/api/', indexRouter);
 app.use('/api/v1/domain/', expanderRoute);
+app.use('/api/v1/domain/', whoisRoute);
+app.use('/api/v1/domain/', dnsLookupRoute);
 
 
 app.listen(3000, () => {

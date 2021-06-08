@@ -21,12 +21,16 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { MatExpansionModule, MatAccordion } from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs';
+import { from } from 'rxjs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ExpanderComponent } from './expander/expander.component';
 import { DomaininfoComponent } from './domaininfo/domaininfo.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { from } from 'rxjs';
+import { InformationComponent } from './information/information.component';
+import { MyipComponent } from './myip/myip.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,9 @@ import { from } from 'rxjs';
     HomeComponent,
     ExpanderComponent,
     DomaininfoComponent,
-    NavigationComponent
+    NavigationComponent,
+    InformationComponent,
+    MyipComponent
   ],
   imports: [
     MatSnackBarModule,
@@ -55,7 +61,10 @@ import { from } from 'rxjs';
     MatInputModule,
     HttpClientModule,
     MatProgressBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatExpansionModule,
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [
   ],

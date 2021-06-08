@@ -1,6 +1,7 @@
 const request = require('request');
 const chalk = require('chalk');
 const url = require('url');
+const dns = require('dns')
 
 var express = require('express');
 var router = express.Router();
@@ -32,16 +33,19 @@ router.get('/expander/url', (req, res, next) => {
         }
       )
     
-    } else if (!reqUrl) {
+    } 
+    
+    if (!reqUrl) {
       res.status(400).json({ error: "No query params found" });
+      return;
     }
   
   }
   
   try {
    expander()
-  } catch(errore) {
-  
+  } catch(err) {
+    res.status(500).json({ error: err.message });
   }
   
   });

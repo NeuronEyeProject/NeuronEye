@@ -43,7 +43,7 @@ getValue(val) {
         console.log(this.resp)
 
         if(response.status = 200) {
-          this.snackBar.open(`Expanded URL Result Displayed: \n ${this.resp['url']}`, 'close')
+          this.snackBar.open(`Expanded URL Result: \n ${this.resp['url']}`, 'close')
         } else {
           this.snackBar.open('Internal Error', 'Close')
         }
