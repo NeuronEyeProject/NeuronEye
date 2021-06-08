@@ -30,7 +30,7 @@ import { ExpanderComponent } from './expander/expander.component';
 import { DomaininfoComponent } from './domaininfo/domaininfo.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { InformationComponent } from './information/information.component';
-import { MyipComponent } from './myip/myip.component';
+
 
 @NgModule({
   declarations: [
@@ -40,8 +40,7 @@ import { MyipComponent } from './myip/myip.component';
     ExpanderComponent,
     DomaininfoComponent,
     NavigationComponent,
-    InformationComponent,
-    MyipComponent
+    InformationComponent
   ],
   imports: [
     MatSnackBarModule,

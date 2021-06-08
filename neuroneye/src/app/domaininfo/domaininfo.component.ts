@@ -14,7 +14,9 @@ export class DomaininfoComponent   {
 
  
   resp=[];
+  respw=[];
   reqDomain=""
+
 
 
 api_url_whois = `http://localhost:3000/api/v1/domain/domaininfo/whois?domain=`
@@ -41,6 +43,7 @@ api_url_lookup = `http://localhost:3000/api/v1/domain/dns/lookup?domain=`
         this.resp = response;
         console.log(this.resp)
 
+
         if(response.status = 200) {
           alert(`DNS Lookup Result  \n -------------------------------- \n Address: ${this.resp['address']} \n Family: IPv${this.resp['family']}`)
         } else {
@@ -59,14 +62,14 @@ api_url_lookup = `http://localhost:3000/api/v1/domain/dns/lookup?domain=`
     console.log("Input:", this.reqDomain)
    }
   
-   getDataAndResultWhois()   { 
+   getDataAndResultWhois() { 
       this.http.get<any>(this.api_url_whois + this.reqDomain).subscribe(
         response => {
-          this.resp = response;
-          console.log(this.resp)
-  
+          this.respw = response;
+          console.log(this.respw)
+
           if(response.status = 200) {
-            alert(`Whois Result  \n -------------------------------- \n A Record: ${this.resp['address']} \n MX Record: ${this.resp['exchange']} \n Nameserver: ${this.resp['value']} `)
+            alert(`Whois Result  \n -------------------------------- \n ${this.respw} `)
           } else {
             this.snackBar.open('Internal Error', 'Close')
           }
