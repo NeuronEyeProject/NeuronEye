@@ -69,7 +69,7 @@ api_url_lookup = `http://localhost:3000/api/v1/domain/dns/lookup?domain=`
           console.log(this.respw)
 
           if(response.status = 200) {
-            alert(`Whois Result  \n -------------------------------- \n ${this.respw} `)
+            alert(`Whois Result  \n -------------------------------- \n ` + JSON.stringify(this.respw) )
           } else {
             this.snackBar.open('Internal Error', 'Close')
           }
