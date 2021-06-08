@@ -4,7 +4,6 @@ Datenschutzerklärung
 Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:
  
 R. Iannelli (Neuroneye)
-8166 Niederweningen (Schweiz)
 E-Mail: ruben.iannelli@wehntal.schule
 WebSite: http://neuroneye.net/
  
@@ -260,6 +259,6 @@ Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung anpassen.
 Fragen an den Datenschutzbeauftragten
 Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserer Organisation.
  
-Niederweningen (Schweiz), 04.06.2021
+ Schweiz, 04.06.2021
 
  

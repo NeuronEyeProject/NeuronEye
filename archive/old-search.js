@@ -1,3 +1,5 @@
+/*
+
 const domains = require("../model/domainSchema");
 const request = require('request');
 const chalk = require('chalk');
@@ -18,7 +20,7 @@ var router = express.Router();
 ////////////////////////////
 
 
-/* <-- Domain  --> */
+
 router.get('/search/:domain', async  (req, res, next) => {
 
   const input = String(req.params.domain);
@@ -35,26 +37,9 @@ router.get('/search/:domain', async  (req, res, next) => {
 });
 
 
- /*  <-- Search Domain -->   
- router.get('/search/:domain', async (req, res, next) => {
 
-  const reqDomain = req.params.domain
 
-  console.log(reqDomain)
 
-    domains.find({ domain: reqDomain })
-    .exec()
-    .then(doc => {
-      if (doc) {
-        res.status(200).json({ message: "domain found", status: true, HTTP_CODE: 200, domain: reqDomain});
-      } else {
-          res.status(404).json({ message: "domain not in database", status: false, HTTP_CODE: 404, domain: reqDomain });
-      }
-    })
-
-});
-
-*/
 
 
 
@@ -66,3 +51,5 @@ router.get('/search/:domain', async  (req, res, next) => {
 
 
 module.exports = router;
+
+*/

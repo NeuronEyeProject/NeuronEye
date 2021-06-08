@@ -10,20 +10,11 @@ const chalk = require('chalk');
 
 // ROUTES
 const indexRouter = require('./routes/index');
-const searchRoute = require('./routes/search');
 const expanderRoute = require('./routes/expander');
 
 // EXPRESS APP
 const app = express();
 
-
-
-
-// DATABASE CONNECTION
-mongoose.connect(`mongodb://127.0.0.1:27017`,
-  { useNewUrlParser: true, useUnifiedTopology: true},
-() => console.log('Connected to Database!'),
-);
 
 
 // RATE LIMIT | 1s = 15req
@@ -35,7 +26,7 @@ const rLimit = rateLimit({
 
 // CORS OPTIONS
 var corsOptions = {
-  origin: 'http://neuroneye.net',
+  origin: 'http://localhost:4200',
   methods: ['GET'],
   allowedHeaders: ['Origin','X-Requested-With','contentType','Content-Type','Accept','Authorization'],
   credentials: true,
@@ -53,7 +44,6 @@ app.use(cors(corsOptions));
 
 // ROUTES
 app.use('/api/', indexRouter);
-app.use('/api/v1/domain/', searchRoute);
 app.use('/api/v1/domain/', expanderRoute);
 
 

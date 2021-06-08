@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UrlscannerComponent } from './urlscanner.component';
+import { ExpanderComponent } from './expander.component';
 
-describe('UrlscannerComponent', () => {
-  let component: UrlscannerComponent;
-  let fixture: ComponentFixture<UrlscannerComponent>;
+describe('ExpanderComponent', () => {
+  let component: ExpanderComponent;
+  let fixture: ComponentFixture<ExpanderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UrlscannerComponent ]
+      declarations: [ ExpanderComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UrlscannerComponent);
+    fixture = TestBed.createComponent(ExpanderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

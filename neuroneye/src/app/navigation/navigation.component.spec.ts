@@ -10,15 +10,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 
-import { NavComponent } from './nav.component';
+import { NavigationComponent } from './navigation.component';
 
-describe('NavComponent', () => {
-  let component: NavComponent;
-  let fixture: ComponentFixture<NavComponent>;
+describe('NavigationComponent', () => {
+  let component: NavigationComponent;
+  let fixture: ComponentFixture<NavigationComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [NavComponent],
+      declarations: [NavigationComponent],
       imports: [
         NoopAnimationsModule,
         LayoutModule,
@@ -35,7 +35,7 @@ describe('NavComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavComponent);
+    fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

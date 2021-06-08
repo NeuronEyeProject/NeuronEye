@@ -1,4 +1,3 @@
-const URLList = require("../model/domainSchema");
 const request = require('request');
 const chalk = require('chalk');
 const url = require('url');

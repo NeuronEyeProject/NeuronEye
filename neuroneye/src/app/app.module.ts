@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
-import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -23,19 +22,20 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-import { UrlscannerComponent } from './urlscanner/urlscanner.component';
-import { InterceptorService } from './loader/interceptor.service';
-import { DangersiteComponent } from './dangersite/dangersite.component';
-import { GoodsiteComponent } from './goodsite/goodsite.component';
+
+import { ExpanderComponent } from './expander/expander.component';
+import { DomaininfoComponent } from './domaininfo/domaininfo.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
+    NavigationComponent,
     HomeComponent,
-    UrlscannerComponent,
-    DangersiteComponent,
-    GoodsiteComponent
+    ExpanderComponent,
+    DomaininfoComponent,
+    NavigationComponent
   ],
   imports: [
     MatSnackBarModule,
@@ -58,7 +58,6 @@ import { GoodsiteComponent } from './goodsite/goodsite.component';
     MatProgressSpinnerModule
   ],
   providers: [
-    {provide:HTTP_INTERCEPTORS, useClass:InterceptorService, multi: true}
   ],
   bootstrap: [AppComponent]
 })

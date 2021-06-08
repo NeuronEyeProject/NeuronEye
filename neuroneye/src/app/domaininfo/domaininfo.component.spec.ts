@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DangersiteComponent } from './dangersite.component';
+import { DomaininfoComponent } from './domaininfo.component';
 
-describe('DangersiteComponent', () => {
-  let component: DangersiteComponent;
-  let fixture: ComponentFixture<DangersiteComponent>;
+describe('DomaininfoComponent', () => {
+  let component: DomaininfoComponent;
+  let fixture: ComponentFixture<DomaininfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DangersiteComponent ]
+      declarations: [ DomaininfoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DangersiteComponent);
+    fixture = TestBed.createComponent(DomaininfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
