@@ -29,7 +29,7 @@ const rLimit = rateLimit({
 
 // CORS OPTIONS
 app.use(cors({
-    origin: ['https://neuroneye.net', 'https://neuroneye.net/domaintools', 'https://neuroneye.net/expander']
+    origin: ['https://neuroneye.net', 'https://neuroneye.net/domaintools', 'https://neuroneye.net/expander', 'http://localhost:4200', 'http://neuroneye.net', 'http://neuroneye.net/domaintools', 'http://neuroneye.net/expander']
 }));
 
 
