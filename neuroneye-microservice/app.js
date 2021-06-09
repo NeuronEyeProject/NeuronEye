@@ -29,13 +29,20 @@ const rLimit = rateLimit({
 
 
 // CORS OPTIONS
-var corsOptions = {
-  origin: 'https://neuroneye.net',
-  methods: ['GET'],
-  allowedHeaders: ['Origin','X-Requested-With','contentType','Content-Type','Accept','Authorization'],
-  credentials: true,
-  optionsSuccessStatus: 200
-}
+app.use(function (req, res, next) {
+
+  var allowedDomains = ['https://neuroneye.net/expander','https://neuroneye.net/domaintools', 'https://neuroneye.net/' ];
+  var origin = req.headers.origin;
+  if(allowedDomains.indexOf(origin) > -1){
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Accept');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+
+  next();
+})
 
 // MIDDLEWARES
 app.use(logger('dev'));
@@ -44,7 +51,7 @@ app.use(rLimit);
 
 // SECURITY MIDDLEWARES
 app.use(helmet());
-app.use(cors(corsOptions));
+
 
 // ROUTES
 app.use('/api/', indexRouter);
