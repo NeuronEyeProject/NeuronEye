@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
 const chalk = require('chalk');
-
+const cors = require('cors');
 
 // ROUTES
 const indexRouter = require('./routes/index');
@@ -29,20 +29,10 @@ const rLimit = rateLimit({
 
 
 // CORS OPTIONS
-app.use(function (req, res, next) {
+app.use(cors({
+    origin: ['https://neuroneye.net', 'https://neuroneye.net/domaintools', 'https://neuroneye.net/expander']
+}));
 
-  var allowedDomains = ['https://neuroneye.net/expander','https://neuroneye.net/domaintools', 'https://neuroneye.net/' ];
-  var origin = req.headers.origin;
-  if(allowedDomains.indexOf(origin) > -1){
-    res.setHeader('Access-Control-Allow-Origin', origin);
-  }
-
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Accept');
-  res.setHeader('Access-Control-Allow-Credentials', true);
-
-  next();
-})
 
 // MIDDLEWARES
 app.use(logger('dev'));
