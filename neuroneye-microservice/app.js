@@ -12,7 +12,9 @@ const chalk = require('chalk');
 const indexRouter = require('./routes/index');
 const expanderRoute = require('./routes/expander');
 const whoisRoute = require('./routes/whois');
-const dnsLookupRoute = require('./routes/dnslookup')
+const dnsLookupRoute = require('./routes/dnslookup');
+
+
 
 // EXPRESS APP
 const app = express();
@@ -22,7 +24,7 @@ const app = express();
 // RATE LIMIT | 1s = 15req
 const rLimit = rateLimit({ 
   windowMs: 1000,
-  max: 10 
+  max: 15 
 });
 
 
@@ -49,6 +51,7 @@ app.use('/api/', indexRouter);
 app.use('/api/v1/domain/', expanderRoute);
 app.use('/api/v1/domain/', whoisRoute);
 app.use('/api/v1/domain/', dnsLookupRoute);
+
 
 
 app.listen(3000, () => {

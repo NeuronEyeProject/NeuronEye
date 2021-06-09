@@ -14,7 +14,7 @@ var router = express.Router();
 //                        //
 ////////////////////////////
 
-/* <-- Url Expander --> */
+
 router.get('/domaininfo/whois', (req, res, next) => {
 
   const reqDomain = req.query.domain

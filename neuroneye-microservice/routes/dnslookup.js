@@ -14,7 +14,7 @@ var router = express.Router();
 //                        //
 ////////////////////////////
 
-/* <-- Url Expander --> */
+
 router.get('/dns/lookup', (req, res, next) => {
 
   const reqDomain = req.query.domain

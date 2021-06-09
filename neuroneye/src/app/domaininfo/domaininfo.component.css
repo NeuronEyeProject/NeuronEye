@@ -86,7 +86,7 @@
   text-shadow:0px 1px 0px #3d768a;
   
   position: absolute;
-  top: 70px;
+  bottom: 0px;
   right: 190px;
  
 }
@@ -97,11 +97,11 @@
   background-color:#000000;
   
   position: absolute;
-  top: 70px;
+  bottom: 0px;
   right: 190px;
 }
 .search-button:active {
 	position: absolute;
-  top: 70px;
+  bottom: 0px;
   right: 190px;
 }

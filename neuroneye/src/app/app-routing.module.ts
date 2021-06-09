@@ -6,13 +6,11 @@ import { DomaininfoComponent } from './domaininfo/domaininfo.component';
 import { dangerouslyDisableDefaultSrc } from 'helmet/dist/middlewares/content-security-policy';
 import { InformationComponent } from './information/information.component';
 
-
 const routes: Routes = [
 { path: 'home', component: HomeComponent},
 { path: 'expander', component: ExpanderComponent},
 { path: 'domaintools', component: DomaininfoComponent},
 { path: 'information', component: InformationComponent },
-
 { path: '**', redirectTo: '/home' }
 ];
 

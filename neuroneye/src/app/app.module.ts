@@ -32,6 +32,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { InformationComponent } from './information/information.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { InformationComponent } from './information/information.component';
     ExpanderComponent,
     DomaininfoComponent,
     NavigationComponent,
-    InformationComponent
+    InformationComponent,
+ 
   ],
   imports: [
     MatSnackBarModule,
