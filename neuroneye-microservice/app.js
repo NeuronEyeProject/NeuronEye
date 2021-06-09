@@ -43,8 +43,8 @@ app.use(rLimit);
 // ROUTES
 app.use('/api/', indexRouter);
 app.use('/api/v1/domain/', expanderRoute);
-app.use('/api//v1/domain/', whoisRoute);
-app.use('/api//v1/domain/', dnsLookupRoute);
+app.use('/api/v1/domain/', whoisRoute);
+app.use('/api/v1/domain/', dnsLookupRoute);
 
 
 
