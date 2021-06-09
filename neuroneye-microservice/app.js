@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
 const chalk = require('chalk');
+const helmet = require('helmet')
 
 // ROUTES
 const indexRouter = require('./routes/index');
