@@ -1,12 +1,11 @@
 // MODULES
-const helmet = require('helmet');
 const express = require('express');
 const logger = require('morgan');
 const mongoose = require("mongoose");
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
 const chalk = require('chalk');
-const helmet = require('helmet')
+
 
 // ROUTES
 const indexRouter = require('./routes/index');
@@ -39,8 +38,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(rLimit);
 
-// SECURITY MIDDLEWARES
-app.use(helmet());
 
 
 // ROUTES
