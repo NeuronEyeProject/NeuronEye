@@ -34,8 +34,6 @@
     <a href="https://neuroneye.net/"><strong>Explore our Webapp »</strong></a>
     <br />
     <br />
-    <a href="https://neuroneye.net/">Webapp</a>
-    ·
     <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Report Bug</a>
     ·
     <a href="https://github.com/NeuronEyeProject/neuroneye/issues">Request Feature</a>
@@ -55,12 +53,10 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="release-checklist">Release Checklist</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -71,25 +67,15 @@
 
 ### Information
 
-Beta Version: Planned for 02.06.2021 (EUW)
+Beta Version
 
-NeuronEye is a project started in spring 2021. NeuronEye is a Web Application where you can check if the domain respectively the website is contained of cyberthreats. We are trying to make a new OSINT tool for security researches and also a new tool for the safety of others. We have a database that will updated with time. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
+NeuronEye is a project started in spring 2021. NeuronEye is a new coming OSINT Tool. We are trying to make a new OSINT tool for security researches and also a new tool for the safety of others. Currently Functions: Domain Information and URL Expander. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
 
 ### Built With
 
 * [Nodejs](https://nodejs.org/)
 * [Expressjs](https://expressjs.com)
 * [Angular](https://angular.io)
-* [MongoDB](https://mongodb.com/)
-
-
-<!-- Checklist -->
-### Release Checklist
-
-Test & Fixing Error Phase
-
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -119,19 +105,10 @@ Distributed under the Apache License 2.0 License. See [License](https://github.c
 <!-- CONTACT -->
 ## Contact
 
-- Email: --
-
 - Discord: [Click to Join](https://discord.gg/vYVu84g74e)
 
 
 
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
 
 
 
