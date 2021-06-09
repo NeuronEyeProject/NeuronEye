@@ -19,8 +19,8 @@ export class DomaininfoComponent   {
 
 
 
-api_url_whois = `http://localhost:3000/api/v1/domain/domaininfo/whois?domain=`
-api_url_lookup = `http://localhost:3000/api/v1/domain/dns/lookup?domain=`
+api_url_whois = `https://neuroneye.net/dev/api/v1/domain/domaininfo/whois?domain=`
+api_url_lookup = `https://neuroneye.net/dev/api/v1/domain/dns/lookup?domain=`
 
 
 

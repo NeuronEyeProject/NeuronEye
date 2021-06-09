@@ -17,8 +17,7 @@ export class ExpanderComponent  {
   resp=[];
   reqURL=""
 
-
-api_url = `http://localhost:3000/api/v1/domain/expander/url?url=`
+  api_url=`https://neuroneye.net/dev/api/v1/domain/expander/url?url=`
 
 
 
