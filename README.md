@@ -69,6 +69,12 @@
 
 Beta Version
 
+ 
+ - WIR HAFTEN NICHT FÜR IRGENDWELCHE ERRICHTETEN SCHADEN. DAS IST FÜR AUSBILDUNGSZWECKE GEDACHT!
+ 
+- WE ARE NOT LIABLE FOR ANY DAMAGE DONE. THIS IS FOR EDUCATIONAL PURPOSES!
+
+
 NeuronEye is a project started in spring 2021. NeuronEye is a new coming OSINT Tool. We are trying to make a new OSINT tool for security researches and also a new tool for the safety of others. Currently Functions: Domain Information and URL Expander. The web application also offers a user friendly interface for desktop user. The Webapp is in early access and will not be the greates from the design. If you want to contribute to the designs, feel free to do it.
 
 ### Built With
